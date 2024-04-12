@@ -20,6 +20,7 @@
   position: fixed;
   height: 100%;
   z-index: 999;
+  overflow-y: scroll;
 }
 
 #members__count {
@@ -351,4 +352,43 @@
   left:50%;
   transform: translateX(-50%);
   cursor: pointer;
+}
+
+input#file-input {
+  background: #323143;
+  width: -webkit-fill-available;
+  padding: 10px 1pc;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  margin-top: 5px;
+}
+
+div#file-upload-section {
+  padding: 1pc;
+}
+
+section#uploads__container {
+  padding: 1pc;
+}
+
+section#uploads__container>h2 {
+  margin: 0 0 1pc;
+}
+
+ul#uploaded__files {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul#uploaded__files a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul#uploaded__files li {
+  width: 100%;
+  border-bottom: 1px solid #ffffff69;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
 }

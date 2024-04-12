@@ -13,6 +13,30 @@
   padding: 2em;
 }
 
+div#active-rooms-container li {
+  list-style: none;
+  background: #ce833d;
+  padding: 10px 2pc;
+  border-radius: 5px;
+  background: rgb(206, 131, 61);
+  background: linear-gradient(
+    90deg,
+    rgba(206, 131, 61, 1) 0%,
+    rgba(102, 92, 245, 1) 64%
+  );
+  text-transform: capitalize;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+div#active-rooms-container ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 #form__container__header {
   border-radius: 10px 10px 0 0;
   padding: 10px;
@@ -37,19 +61,8 @@
   display: block;
 }
 
-.form__field__wrapper input {
-  box-sizing: border-box;
-  color: #fff;
-  width: 100%;
-  margin: 0;
-  border: none;
-  border-radius: 5px;
-  padding: 16px 20px;
-  font-size: 15px;
-  background-color: #3f434a;
-}
 
-.form__field__wrapper button[type='submit'] {
+.form__field__wrapper button[type="submit"] {
   margin-top: 32px;
   cursor: pointer;
   background-color: #ce833d;
@@ -65,7 +78,7 @@
   gap: 10px;
 }
 
-.form__field__wrapper button[type='submit'] svg {
+.form__field__wrapper button[type="submit"] svg {
   fill: #ede0e0;
   width: 20px;
 }
