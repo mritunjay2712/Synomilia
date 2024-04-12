@@ -19,9 +19,11 @@ def get_active_rooms():
 @app.route('/room.html')
 def room():
     room_name = request.args.get('room')
-    if room_name and room_name not in active_rooms:
-        active_rooms.append(room_name)
+    if room_name:
+        if room_name not in active_rooms:
+            active_rooms.append(room_name)
     return render_template('room.html')
+
 
 @app.route('/upload', methods=['POST'])
 def upload_file():

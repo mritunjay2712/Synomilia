@@ -49,13 +49,19 @@
                  </div>
  
                  <div class="form__field__wrapper">
-                    <select name="room" id="" required>
+                    <label>Select or create a room:</label>
+                    <select name="room" id="room_select" required>
                         <option value="">--SELECT OPTION--</option>
                         <option value="physics">Physics</option>
                         <option value="maths">Maths</option>
                         <option value="chemistry">Chemistry</option>
+                        <option value="custom">Custom Room</option> <!-- Add custom room option -->
                     </select>
-                 </div>
+                </div>
+                <div class="form__field__wrapper" id="custom_room_input" style="display: none;">
+                    <label for="custom_room_name">Enter custom room name:</label>
+                    <input type="text" name="custom_room_name" id="custom_room_name" placeholder="Custom Room Name">
+                </div>
  
                  <div class="form__field__wrapper">
                      <button type="submit">Go to Room 
